@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starter Digital — Креативна digital-агенція</title>
+    <meta name="description"
+        content="Ми створюємо сучасні вебсайти, додатки та digital-рішення для бізнесу. Від лендингів до складних платформ на WordPress.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <a href="#" class="logo">
+                <span class="logo__icon">◆</span>
+                <span class="logo__text">Starter<span class="accent">Digital</span></span>
+            </a>
+            <nav class="nav" id="nav">
+                <a href="#services" class="nav__link">Послуги</a>
+                <a href="#portfolio" class="nav__link">Портфоліо</a>
+                <a href="#process" class="nav__link">Процес</a>
+                <a href="#testimonials" class="nav__link">Відгуки</a>
+                <a href="#contact" class="nav__link">Контакти</a>
+            </nav>
+            <div class="header__actions">
+                <a href="#contact" class="btn btn--primary btn--sm">Зв'язатись</a>
+                <button class="burger" id="burger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero__bg">
+            <div class="hero__gradient"></div>
+            <div class="hero__grid-lines"></div>
+        </div>
+        <div class="container hero__inner">
+            <div class="hero__badge" data-animate="fade-up">
+                <span class="pulse"></span>
+                Приймаємо нові проєкти
+            </div>
+            <h1 class="hero__title" data-animate="fade-up" data-delay="100">
+                Створюємо <span class="gradient-text">digital-продукти</span>,<br>
+                що захоплюють
+            </h1>
+            <p class="hero__subtitle" data-animate="fade-up" data-delay="200">
+                Від лендингів та корпоративних сайтів до складних платформ на WordPress.
+                Ми перетворюємо ідеї у працюючі digital-рішення.
+            </p>
+            <div class="hero__cta" data-animate="fade-up" data-delay="300">
+                <a href="#contact" class="btn btn--primary btn--lg">Обговорити проєкт →</a>
+                <a href="#portfolio" class="btn btn--outline btn--lg">Наші роботи</a>
+            </div>
+            <div class="hero__stats" data-animate="fade-up" data-delay="400">
+                <div class="stat">
+                    <span class="stat__num" data-count="150">0</span><span class="stat__plus">+</span>
+                    <span class="stat__label">Проєктів</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__num" data-count="5">0</span>
+                    <span class="stat__label">Років досвіду</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__num" data-count="98">0</span><span class="stat__plus">%</span>
+                    <span class="stat__label">Задоволених клієнтів</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__num" data-count="24">0</span><span class="stat__plus">/7</span>
+                    <span class="stat__label">Підтримка</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services section" id="services">
+        <div class="container">
+            <div class="section__header" data-animate="fade-up">
+                <span class="section__badge">Послуги</span>
+                <h2 class="section__title">Що ми <span class="gradient-text">робимо</span></h2>
+                <p class="section__desc">Повний цикл розробки — від дизайну до деплою та підтримки</p>
+            </div>
+            <div class="services__grid">
+                <div class="service-card" data-animate="fade-up" data-delay="0">
+                    <div class="service-card__icon">🎨</div>
+                    <h3 class="service-card__title">UI/UX Дизайн</h3>
+                    <p class="service-card__desc">Сучасні макети у Figma з фокусом на конверсію та юзабіліті. Адаптивний
+                        дизайн під усі пристрої.</p>
+                    <ul class="service-card__tags">
+                        <li>Figma</li>
+                        <li>Прототипи</li>
+                        <li>UI Kit</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-animate="fade-up" data-delay="100">
+                    <div class="service-card__icon">💻</div>
+                    <h3 class="service-card__title">Frontend розробка</h3>
+                    <p class="service-card__desc">Pixel-perfect верстка по макетах. Чистий, семантичний HTML/CSS/JS з
+                        анімаціями та інтерактивністю.</p>
+                    <ul class="service-card__tags">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>GSAP</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-animate="fade-up" data-delay="200">
+                    <div class="service-card__icon">🔧</div>
+                    <h3 class="service-card__title">WordPress</h3>
+                    <p class="service-card__desc">Кастомні теми та плагіни. Gutenberg-блоки, ACF, WooCommerce.
+                        Оптимізація швидкості та SEO.</p>
+                    <ul class="service-card__tags">
+                        <li>PHP</li>
+                        <li>Themes</li>
+                        <li>Plugins</li>
+                        <li>WooCommerce</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-animate="fade-up" data-delay="300">
+                    <div class="service-card__icon">🤖</div>
+                    <h3 class="service-card__title">AI / Vibecoding</h3>
+                    <p class="service-card__desc">Використовуємо Claude Code та інші AI-інструменти для прискорення
+                        розробки без втрати якості.</p>
+                    <ul class="service-card__tags">
+                        <li>Claude</li>
+                        <li>Copilot</li>
+                        <li>Automation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio section" id="portfolio">
+        <div class="container">
+            <div class="section__header" data-animate="fade-up">
+                <span class="section__badge">Портфоліо</span>
+                <h2 class="section__title">Останні <span class="gradient-text">проєкти</span></h2>
+                <p class="section__desc">Декілька робіт з нашого портфоліо</p>
+            </div>
+            <div class="portfolio__filters" data-animate="fade-up">
+                <button class="filter-btn active" data-filter="all">Всі</button>
+                <button class="filter-btn" data-filter="web">Вебсайти</button>
+                <button class="filter-btn" data-filter="wordpress">WordPress</button>
+                <button class="filter-btn" data-filter="landing">Лендинги</button>
+            </div>
+            <div class="portfolio__grid">
+                <div class="project-card" data-category="wordpress" data-animate="fade-up">
+                    <div class="project-card__img" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+                        <div class="project-card__overlay">
+                            <span class="project-card__view">Переглянути →</span>
+                        </div>
+                    </div>
+                    <div class="project-card__info">
+                        <span class="project-card__cat">WordPress / WooCommerce</span>
+                        <h3 class="project-card__title">Інтернет-магазин електроніки</h3>
+                        <p class="project-card__desc">Повноцінний e-commerce на WooCommerce з кастомною темою та
+                            інтеграцією оплати</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="landing" data-animate="fade-up" data-delay="100">
+                    <div class="project-card__img" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+                        <div class="project-card__overlay">
+                            <span class="project-card__view">Переглянути →</span>
+                        </div>
+                    </div>
+                    <div class="project-card__info">
+                        <span class="project-card__cat">Лендинг</span>
+                        <h3 class="project-card__title">SaaS-платформа для стартапів</h3>
+                        <p class="project-card__desc">Конверсійний лендинг з анімаціями, dark mode та інтеграцією Stripe
+                        </p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web" data-animate="fade-up" data-delay="200">
+                    <div class="project-card__img" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+                        <div class="project-card__overlay">
+                            <span class="project-card__view">Переглянути →</span>
+                        </div>
+                    </div>
+                    <div class="project-card__info">
+                        <span class="project-card__cat">Корпоративний сайт</span>
+                        <h3 class="project-card__title">Digital-агенція «Starter»</h3>
+                        <p class="project-card__desc">Мультимовний корпоративний сайт з кастомним CMS та блогом</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="wordpress" data-animate="fade-up" data-delay="300">
+                    <div class="project-card__img" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">
+                        <div class="project-card__overlay">
+                            <span class="project-card__view">Переглянути →</span>
+                        </div>
+                    </div>
+                    <div class="project-card__info">
+                        <span class="project-card__cat">WordPress Theme</span>
+                        <h3 class="project-card__title">Блог-платформа для авторів</h3>
+                        <p class="project-card__desc">Кастомна тема з Gutenberg-блоками, оптимізована під Core Web
+                            Vitals</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="process section" id="process">
+        <div class="container">
+            <div class="section__header" data-animate="fade-up">
+                <span class="section__badge">Процес</span>
+                <h2 class="section__title">Як ми <span class="gradient-text">працюємо</span></h2>
+                <p class="section__desc">Простий і прозорий процес від першого дзвінка до запуску</p>
+            </div>
+            <div class="process__timeline">
+                <div class="process__step" data-animate="fade-up">
+                    <div class="process__num">01</div>
+                    <div class="process__content">
+                        <h3>Брифінг та аналіз</h3>
+                        <p>Розбираємось у вашому бізнесі, цілях та аудиторії. Формуємо ТЗ та пропозицію.</p>
+                    </div>
+                </div>
+                <div class="process__step" data-animate="fade-up" data-delay="100">
+                    <div class="process__num">02</div>
+                    <div class="process__content">
+                        <h3>Дизайн та прототип</h3>
+                        <p>Створюємо макети у Figma, узгоджуємо з вами, вносимо правки до ідеалу.</p>
+                    </div>
+                </div>
+                <div class="process__step" data-animate="fade-up" data-delay="200">
+                    <div class="process__num">03</div>
+                    <div class="process__content">
+                        <h3>Розробка</h3>
+                        <p>Верстаємо та програмуємо. Використовуємо AI-інструменти для прискорення. Показуємо прогрес.
+                        </p>
+                    </div>
+                </div>
+                <div class="process__step" data-animate="fade-up" data-delay="300">
+                    <div class="process__num">04</div>
+                    <div class="process__content">
+                        <h3>Тестування та запуск</h3>
+                        <p>Тестуємо на всіх пристроях, оптимізуємо швидкість, деплоїмо та контролюємо.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials section" id="testimonials">
+        <div class="container">
+            <div class="section__header" data-animate="fade-up">
+                <span class="section__badge">Відгуки</span>
+                <h2 class="section__title">Що кажуть <span class="gradient-text">клієнти</span></h2>
+            </div>
+            <div class="testimonials__slider" data-animate="fade-up">
+                <div class="testimonial-card active">
+                    <div class="testimonial-card__stars">★★★★★</div>
+                    <p class="testimonial-card__text">«Дуже задоволені результатом! Сайт виглядає професійно, працює
+                        швидко, а команда завжди на зв'язку. Рекомендую.»</p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">АК</div>
+                        <div>
+                            <span class="testimonial-card__name">Андрій Коваленко</span>
+                            <span class="testimonial-card__role">CEO, TechStart</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-card__stars">★★★★★</div>
+                    <p class="testimonial-card__text">«Зробили нам інтернет-магазин на WordPress за 2 тижні. Все працює
+                        чудово, клієнти вже замовляють. Дякуємо!»</p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">ОМ</div>
+                        <div>
+                            <span class="testimonial-card__name">Олена Мельник</span>
+                            <span class="testimonial-card__role">Власниця, ShopUA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-card__stars">★★★★★</div>
+                    <p class="testimonial-card__text">«Професійний підхід, чистий код, швидка комунікація. Саме те, що
+                        ми шукали для нашого проєкту.»</p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">ДС</div>
+                        <div>
+                            <span class="testimonial-card__name">Дмитро Сидоренко</span>
+                            <span class="testimonial-card__role">CTO, DataFlow</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials__dots">
+                <button class="dot active" data-slide="0"></button>
+                <button class="dot" data-slide="1"></button>
+                <button class="dot" data-slide="2"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="stack section">
+        <div class="container">
+            <div class="section__header" data-animate="fade-up">
+                <span class="section__badge">Технології</span>
+                <h2 class="section__title">Наш <span class="gradient-text">стек</span></h2>
+            </div>
+            <div class="stack__grid" data-animate="fade-up">
+                <div class="stack__item"><span>HTML5</span></div>
+                <div class="stack__item"><span>CSS3 / SCSS</span></div>
+                <div class="stack__item"><span>JavaScript</span></div>
+                <div class="stack__item"><span>TypeScript</span></div>
+                <div class="stack__item"><span>PHP</span></div>
+                <div class="stack__item"><span>WordPress</span></div>
+                <div class="stack__item"><span>WooCommerce</span></div>
+                <div class="stack__item"><span>ACF Pro</span></div>
+                <div class="stack__item"><span>Git</span></div>
+                <div class="stack__item"><span>Figma</span></div>
+                <div class="stack__item"><span>Claude AI</span></div>
+                <div class="stack__item"><span>REST API</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="contact__grid">
+                <div class="contact__info" data-animate="fade-up">
+                    <span class="section__badge">Контакти</span>
+                    <h2 class="section__title">Давайте <span class="gradient-text">поспілкуємось</span></h2>
+                    <p class="section__desc">Маєте проєкт? Напишіть нам — відповімо протягом 2 годин у робочий час.</p>
+                    <div class="contact__details">
+                        <div class="contact__detail">
+                            <span class="contact__detail-icon">📧</span>
+                            <div>
+                                <span class="contact__detail-label">Email</span>
+                                <a href="mailto:hello@starter.digital">hello@starter.digital</a>
+                            </div>
+                        </div>
+                        <div class="contact__detail">
+                            <span class="contact__detail-icon">💬</span>
+                            <div>
+                                <span class="contact__detail-label">Telegram</span>
+                                <a href="#">@starter_digital</a>
+                            </div>
+                        </div>
+                        <div class="contact__detail">
+                            <span class="contact__detail-icon">📍</span>
+                            <div>
+                                <span class="contact__detail-label">Локація</span>
+                                <span>Україна, Remote</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact__form" data-animate="fade-up" data-delay="100" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Ваше ім'я</label>
+                            <input type="text" placeholder="Як до вас звертатись?" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="email@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Тип проєкту</label>
+                        <select>
+                            <option>Лендинг / Промо-сайт</option>
+                            <option>Корпоративний сайт</option>
+                            <option>WordPress тема/плагін</option>
+                            <option>Інтернет-магазин</option>
+                            <option>Інше</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Повідомлення</label>
+                        <textarea rows="4" placeholder="Розкажіть коротко про ваш проєкт..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--lg btn--full">Надіслати заявку →</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <a href="#" class="logo">
+                    <span class="logo__icon">◆</span>
+                    <span class="logo__text">Starter<span class="accent">Digital</span></span>
+                </a>
+                <p>Створюємо digital-продукти, що захоплюють та конвертують.</p>
+            </div>
+            <div class="footer__links">
+                <h4>Послуги</h4>
+                <a href="#">UI/UX Дизайн</a>
+                <a href="#">Frontend</a>
+                <a href="#">WordPress</a>
+                <a href="#">AI Vibecoding</a>
+            </div>
+            <div class="footer__links">
+                <h4>Компанія</h4>
+                <a href="#portfolio">Портфоліо</a>
+                <a href="#process">Процес</a>
+                <a href="#testimonials">Відгуки</a>
+                <a href="#contact">Контакти</a>
+            </div>
+            <div class="footer__links">
+                <h4>Соцмережі</h4>
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Telegram</a>
+                <a href="#">Behance</a>
+            </div>
+        </div>
+        <div class="container footer__bottom">
+            <span>© 2025 StarterDigital. Всі права захищені.</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
