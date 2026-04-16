@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">&lt;dev /&gt;</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <canvas id="particleCanvas"></canvas>
+        </div>
+        <div class="hero-content">
+            <p class="hero-greeting">Hi, I'm</p>
+            <h1 class="hero-name">Olga Martynyuk</h1>
+            <div class="hero-title">
+                <span class="typing-text" id="typingText"></span>
+                <span class="cursor">|</span>
+            </div>
+            <p class="hero-desc">Building robust backends, smart trading bots, and everything in between</p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="https://github.com/Evge14n" target="_blank" class="btn btn-outline">GitHub</a>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+        </a>
+    </section>
+
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Full-stack developer with a focus on <strong>Go</strong>, <strong>Python</strong>, and <strong>systems programming</strong>. I build high-performance backends, real-time data pipelines, and AI-powered trading systems.</p>
+                    <p>I work across the entire stack &mdash; from low-level networking and Linux administration to modern web frontends and cloud infrastructure. Every project is an opportunity to write clean, efficient code that solves real problems.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-num" data-target="15">0</span>+
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num" data-target="8">0</span>+
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num" data-target="3">0</span>+
+                            <span class="stat-label">Years Coding</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-terminal">
+                    <div class="terminal">
+                        <div class="terminal-header">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                            <span class="terminal-title">~/about</span>
+                        </div>
+                        <div class="terminal-body">
+                            <p><span class="t-prompt">$</span> cat profile.json</p>
+                            <pre><code>{
+  "location": "Ukraine",
+  "languages": ["Go", "Python", "JS", "PHP"],
+  "databases": ["PostgreSQL", "Redis", "MongoDB"],
+  "infra": ["Docker", "NATS", "Linux", "Nginx"],
+  "interests": [
+    "distributed systems",
+    "algorithmic trading",
+    "cybersecurity",
+    "physics simulations"
+  ],
+  "currently": "building real-time sports platform"
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-dark" id="skills">
+        <div class="container">
+            <h2 class="section-title">Tech Stack</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                    </div>
+                    <h3>Backend</h3>
+                    <div class="skill-tags">
+                        <span class="tag tag-go">Go</span>
+                        <span class="tag tag-python">Python</span>
+                        <span class="tag tag-php">PHP</span>
+                        <span class="tag">REST API</span>
+                        <span class="tag">WebSocket</span>
+                        <span class="tag">gRPC</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+                    </div>
+                    <h3>Databases & Queues</h3>
+                    <div class="skill-tags">
+                        <span class="tag tag-db">PostgreSQL</span>
+                        <span class="tag tag-db">Redis</span>
+                        <span class="tag tag-db">MongoDB</span>
+                        <span class="tag">NATS</span>
+                        <span class="tag">RabbitMQ</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                    </div>
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="tag">HTML5/CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Canvas API</span>
+                        <span class="tag">WebSocket</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3>DevOps & Infrastructure</h3>
+                    <div class="skill-tags">
+                        <span class="tag tag-devops">Docker</span>
+                        <span class="tag tag-devops">Linux</span>
+                        <span class="tag">Nginx</span>
+                        <span class="tag">CI/CD</span>
+                        <span class="tag">Git</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v6M12 17v6M4.22 4.22l4.24 4.24M15.54 15.54l4.24 4.24M1 12h6M17 12h6M4.22 19.78l4.24-4.24M15.54 8.46l4.24-4.24"/></svg>
+                    </div>
+                    <h3>AI & Trading</h3>
+                    <div class="skill-tags">
+                        <span class="tag tag-ai">Python ML</span>
+                        <span class="tag tag-ai">Bybit API</span>
+                        <span class="tag">Technical Analysis</span>
+                        <span class="tag">Multi-Agent Systems</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3>Security & Networking</h3>
+                    <div class="skill-tags">
+                        <span class="tag tag-sec">Kali Linux</span>
+                        <span class="tag tag-sec">Pentesting</span>
+                        <span class="tag">LoRa Mesh</span>
+                        <span class="tag">Network Admin</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+
+                <article class="project-card featured">
+                    <div class="project-header">
+                        <span class="project-badge">Featured</span>
+                        <div class="project-links">
+                            <a href="https://github.com/Evge14n/go-sports-hub" target="_blank" class="project-link" title="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="20"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3>Go Sports Hub</h3>
+                    <p>Real-time sports betting data platform with live odds, WebSocket streaming, and event processing pipeline. NATS message queue, PostgreSQL persistence, Redis caching.</p>
+                    <div class="project-tech">
+                        <span>Go</span><span>PostgreSQL</span><span>Redis</span><span>NATS</span><span>WebSocket</span><span>Docker</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-badge badge-ai">AI</span>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="Private Repo">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3>AI Trading Bot</h3>
+                    <p>Multi-agent crypto trading system for Bybit. Bollinger Bands mean reversion strategy with ADX filter, risk management, and automated position sizing.</p>
+                    <div class="project-tech">
+                        <span>Python</span><span>Bybit API</span><span>TA-Lib</span><span>asyncio</span><span>Claude AI</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-badge badge-web">Web</span>
+                        <div class="project-links">
+                            <a href="https://github.com/Evge14n/physics-visual" target="_blank" class="project-link" title="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="20"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                            </a>
+                            <a href="https://evge14n.github.io/physics-visual/" target="_blank" class="project-link" title="Live Demo">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3>Physics Visual</h3>
+                    <p>Interactive physics learning platform with KaTeX formulas, Canvas visualizations, solved problems, and ZNO test prep. Covers electricity, magnetism, AC circuits.</p>
+                    <div class="project-tech">
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Canvas</span><span>KaTeX</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-badge badge-sys">Systems</span>
+                    </div>
+                    <h3>Systems Programming</h3>
+                    <p>Low-level systems projects: custom memory allocators, concurrent data structures, network protocol implementations, and OS-level utilities.</p>
+                    <div class="project-tech">
+                        <span>C</span><span>Go</span><span>Linux</span><span>Networking</span><span>Concurrency</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-badge badge-web">Web</span>
+                    </div>
+                    <h3>Task Manager</h3>
+                    <p>Full-stack task management application with authentication, real-time updates, drag-and-drop boards, and team collaboration features.</p>
+                    <div class="project-tech">
+                        <span>React</span><span>Node.js</span><span>PostgreSQL</span><span>WebSocket</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="project-badge badge-sec">Security</span>
+                    </div>
+                    <h3>LoRa Mesh Network</h3>
+                    <p>Decentralized mesh communication network using LoRa radio modules. End-to-end encryption, multi-hop routing, and offline messaging capability.</p>
+                    <div class="project-tech">
+                        <span>C++</span><span>LoRa</span><span>Mesh Protocol</span><span>Encryption</span>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-dark" id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 &mdash; Present</span>
+                        <h3>Freelance Developer</h3>
+                        <p>Full-stack development, CRM integrations (Kommo/amoCRM), webhook systems, PHP/WordPress backends, Tilda landing pages with custom logic.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 &mdash; Present</span>
+                        <h3>AI Trading Systems</h3>
+                        <p>Designing and building algorithmic trading bots for cryptocurrency markets. Multi-agent architecture, technical analysis, risk management.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023 &mdash; Present</span>
+                        <h3>Open Source & Personal Projects</h3>
+                        <p>Building portfolio of production-grade projects: Go microservices, real-time platforms, educational tools, systems programming experiments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p class="contact-text">Interested in working together? Feel free to reach out.</p>
+                <div class="contact-links">
+                    <a href="https://github.com/Evge14n" target="_blank" class="contact-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="mailto:igrikomputer@gmail.com" class="contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://t.me/Evge14n" target="_blank" class="contact-item">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="24"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0h-.056zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                        <span>Telegram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Olga Martynyuk. Built with clean code.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
